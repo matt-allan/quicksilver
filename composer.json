@@ -1,0 +1,29 @@
+{
+    "name": "matthew-james/quicksilver",
+    "description": "A demo bike messenger app, using hexagonal architecture.",
+    "require": {
+        "marc-mabe/php-enum": "^2.2"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Matt Allan",
+            "email": "matthew.james.allan@gmail.com"
+        }
+    ],
+    "require-dev": {
+        "behat/behat": "^3.0",
+        "mockery/mockery": "^0.9.4",
+        "fzaninotto/faker": "^1.5"
+    },
+    "autoload": {
+        "psr-4": {
+            "Quicksilver\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Quicksilver\\Tests\\": "tests/"
+        }
+    }
+}
