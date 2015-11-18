@@ -66,8 +66,6 @@ class Create
 
         $delivery = new Delivery($pickup, $destination, $requester, $priority);
 
-        // @todo Validate
-
         $this->deliveryRepository->save($delivery);
 
         return $delivery;
