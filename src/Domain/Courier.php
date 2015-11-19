@@ -2,10 +2,6 @@
 
 namespace Quicksilver\Domain;
 
-class Courier implements User
+class Courier extends User
 {
-    /**
-     * @var int
-     */
-    private $id;
 }

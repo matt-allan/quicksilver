@@ -2,10 +2,6 @@
 
 namespace Quicksilver\Domain;
 
-class Customer implements User
+class Customer extends User
 {
-    /**
-     * @var int
-     */
-    private $id;
 }
