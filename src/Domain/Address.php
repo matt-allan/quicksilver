@@ -45,4 +45,44 @@ class Address
         $this->state    = $state;
         $this->postCode = $postCode;
     }
+
+    /**
+     * @return string
+     */
+    public function getName()
+    {
+        return $this->name;
+    }
+
+    /**
+     * @return string
+     */
+    public function getStreet()
+    {
+        return $this->street;
+    }
+
+    /**
+     * @return string
+     */
+    public function getCity()
+    {
+        return $this->city;
+    }
+
+    /**
+     * @return string
+     */
+    public function getState()
+    {
+        return $this->state;
+    }
+
+    /**
+     * @return string
+     */
+    public function getPostCode()
+    {
+        return $this->postCode;
+    }
 }

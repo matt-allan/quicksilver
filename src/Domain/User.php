@@ -17,4 +17,12 @@ abstract class User
     {
         $this->id = $id;
     }
+
+    /**
+     * @return int
+     */
+    public function getId()
+    {
+        return $this->id;
+    }
 }

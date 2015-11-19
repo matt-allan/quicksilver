@@ -84,18 +84,58 @@ class Delivery
     }
 
     /**
-     * @return Delivery\Status
-     */
-    public function getStatus()
-    {
-        return $this->status;
-    }
-
-    /**
      * @return int
      */
     public function getId()
     {
         return $this->id;
+    }
+
+    /**
+     * @return Address
+     */
+    public function getPickup()
+    {
+        return $this->pickup;
+    }
+
+    /**
+     * @return Address
+     */
+    public function getDestination()
+    {
+        return $this->destination;
+    }
+
+    /**
+     * @return Customer
+     */
+    public function getRequester()
+    {
+        return $this->requester;
+    }
+
+    /**
+     * @return Delivery\Priority
+     */
+    public function getPriority()
+    {
+        return $this->priority;
+    }
+
+    /**
+     * @return string
+     */
+    public function getSignature()
+    {
+        return $this->signature;
+    }
+
+    /**
+     * @return Delivery\Status
+     */
+    public function getStatus()
+    {
+        return $this->status;
     }
 }
