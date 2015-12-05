@@ -29,7 +29,7 @@ class Factory
 
     public static function courier()
     {
-        return new Courier();
+        return new Courier(self::faker()->numberBetween(1));
     }
 
     /**
@@ -37,7 +37,7 @@ class Factory
      */
     public static function customer()
     {
-        return new Customer();
+        return new Customer(self::faker()->numberBetween(1));
     }
 
     public static function delivery(Address $pickup = null, Address $destination = null, Customer $customer = null, Priority $priority = null)
