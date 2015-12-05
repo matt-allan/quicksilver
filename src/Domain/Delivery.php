@@ -77,6 +77,10 @@ class Delivery
      */
     public function deliver($signature)
     {
+        if ($this->status !== Delivery\Status::PICKED_UP()) {
+            throw new InvalidRequestException('Delivery status must be PICKED_UP to mark as delivered.');
+        }
+
         $this->signature = $signature;
         $this->status    = Delivery\Status::DELIVERED();
 
